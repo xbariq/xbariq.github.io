@@ -1,1 +1,82 @@
-<h1>Hi</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Netflix UI Survey</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Netflix UI Evaluation Survey</h1>
+      <a href="https://www.netflix.com" target="_blank">Visit Netflix</a>
+      <form class="survey-form">
+        <label for="email">Your Email (optional):</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="visit-frequency">How often do you visit Netflix?</label>
+        <select id="visit-frequency" name="visit_frequency">
+          <option value="daily">Daily</option>
+          <option value="weekly">Weekly</option>
+          <option value="monthly">Monthly</option>
+          <option value="rarely">Rarely</option>
+        </select>
+
+        <label>How do you rate the ease of finding content on Netflix?</label>
+        <div class="rating-section">
+          <label for="excellent">Excellent</label>
+          <input
+            type="radio"
+            id="excellent"
+            name="ease_of_finding"
+            value="excellent"
+          />
+          <label for="good">Good</label>
+          <input type="radio" id="good" name="ease_of_finding" value="good" />
+          <label for="fair">Fair</label>
+          <input type="radio" id="fair" name="ease_of_finding" value="fair" />
+          <label for="poor">Poor</label>
+          <input type="radio" id="poor" name="ease_of_finding" value="poor" />
+        </div>
+
+        <label for="ui-impression"
+          >What is your first impression of the Netflix UI?</label
+        >
+        <textarea
+          id="ui-impression"
+          name="ui_impression"
+          rows="4"
+          cols="50"
+        ></textarea>
+
+        <label>Which device do you primarily use to watch Netflix?</label>
+        <div class="device-section">
+          <label for="mobile">Mobile</label>
+          <input type="checkbox" id="mobile" name="device" value="mobile" />
+          <label for="tablet">Tablet</label>
+          <input type="checkbox" id="tablet" name="device" value="tablet" />
+          <label for="laptop">Laptop</label>
+
+          <input type="checkbox" id="laptop" name="device" value="laptop" />
+
+          <label for="tv">TV</label>
+          <input type="checkbox" id="tv" name="device" value="tv" />
+        </div>
+
+        <label for="improvements">Any suggestions for improvement?</label>
+        <textarea
+          id="improvements"
+          name="improvements"
+          rows="4"
+          cols="50"
+        ></textarea>
+
+        <input
+          type="button"
+          value="Submit Survey"
+          onclick="alert('Thank you for your feedback!');"
+        />
+      </form>
+      <p class="signature">Survey by : Bariq Talib</p>
+    </div>
+  </body>
+</html>
